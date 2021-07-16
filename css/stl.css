@@ -1,0 +1,139 @@
+:root{
+    --fuenteParrafos:'Open Sans', sans-serif;
+    --blanco:#ffffff;
+    --gris: #216ec58f;
+    --negro:#000000;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 90%;
+}
+body{
+    background-color: rgb(189, 118, 189);
+    font-family: var(--fuenteParrafos);
+    font-size: 16px;
+}
+header{
+    vertical-align: top;
+    border: 10px inset rgb(21, 72, 114);
+    border-radius: 18px;
+    border-style:ridge;
+    padding: 5px;
+    }
+.princ{
+    background-image: url(../img/img1.jpg);
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+nav{
+    display: inline-block;
+    width: 700px;
+    text-align: left;
+}
+ul{
+    list-style-type: none; margin:0; padding:0;
+    background-color: cadetblue; overflow: auto;
+}
+li{
+    float: left; 
+}
+li a{
+    display: block; color: black; text-align: left;
+    padding: 8px 8px;
+}
+li a:hover{
+    background-color:rgb(21, 72, 114);
+}
+
+h1{
+    text-align: center;
+    font-family:"Gill Sans Extrabold", cursive;
+    color:var(--gris);
+    font-size: 12rem;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    padding: 2px;
+    align-content:unset;
+    background-color: rgb(160, 95, 160);
+    height: 400px;
+}
+.grid >div{
+    
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/**utilidades**/
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+.boton{
+    display: block;
+    font-family: var(--fuenteheading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+@media (min-width: 768px){
+    .cursos{
+        display: grid;
+        grid-template-columns: 33.3% 66.7%;
+        column-gap: 2rem;
+    }
+}
+.cursos:last-of-type{
+    border: none;
+}
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 90%;
+    padding: 5rem;
+}
+
